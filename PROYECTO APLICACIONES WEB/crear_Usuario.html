@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios y Roles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <img src="uleam_logo.png" alt="Logo ULEAM" class="logo">
+        <div class="header-buttons">
+            <button onclick="location.href='admin.html'">Menú Principal</button>
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <!-- Formulario de Creación de Usuario -->
+    <div class="container">
+        <h1>Crear Usuario</h1>
+        <form id="crear_usuario_form" onsubmit="return validarFormulario()">
+            <!-- Campos del formulario para asignar roles -->
+            <label for="cedula">Introduzca el número de cédula:</label>
+            <input type="text" id="cedula" name="cedula" required><br>
+            
+            <label for="nombre_usuario">Nombre de Usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
+            
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required><br>
+            
+            <label for="numero">Introduzca el número telefónico:</label>
+            <input type="text" id="numero" name="numero" required><br>
+            
+            <label for="sexo">Seleccione el sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select><br> 
+            
+            <label for="direccion">Introduzca la dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+            
+            <label for="email">Introduzca el correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="rol">Asigne un Rol:</label>
+            <select id="rol" name="rol" required>
+                <option value="admin">Administrador</option>
+                <option value="user">Usuario</option>
+            </select><br>    
+            
+            <button type="submit">Siguiente</button>
+            <button type="button" onclick="confirmarCancelar()">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

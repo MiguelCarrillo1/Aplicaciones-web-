@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333333;
+    padding: -4px; /* Cambié a un padding fijo para un mejor control */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.logo {
+    width: 450px;
+    height: 125px;
+}
+
+.container {
+    max-width: 600px; /* Aumenté el ancho máximo para más espacio */
+    margin: 20px auto; /* Añadido margen superior para separación */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el contenedor */
+}
+
+h1 {
+    color: #d3222a;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="date"], 
+textarea, 
+select {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #d3222a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b71b23;
+}
+
+p {
+    color: #333333;
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    background-color: #d3222a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px; /* altura del botón */
+    font-size: 14px;
+}
+
+.header-buttons button:hover {
+    background-color: #b71b23;
+}

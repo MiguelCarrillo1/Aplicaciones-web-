@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja de Activos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="uleam_logo.png" alt="Logo ULEAM" class="logo">
+        <div class="header-buttons">
+            <button onclick="location.href='admin.html'">Menú Principal</button>
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Baja de Activos</h1>
+        <form id="baja_activos_form" onsubmit="return darBajaActivo(event)">
+            <label for="activo_baja">Activo a Dar de Baja:</label>
+            <input type="text" id="activo_baja" name="activo_baja" required>
+            <label for="motivo">Escriba el motivo para dar de Baja al activo:</label>
+            <input type="text" id="motivo" name="motivo" required>
+            <button type="submit">Dar de Baja Activo</button>
+            <button type="button" onclick="confirmarCancelar()">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
